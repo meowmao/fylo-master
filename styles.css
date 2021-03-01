@@ -68,6 +68,11 @@ nav .navigation{
     margin-right: 1rem;
 }
 
+.navigation li a:hover{
+    border-bottom: 1px solid white;
+    font-weight: 700;
+}
+
 @media only screen and (min-width:992px){
     .logo{
         width: 7rem;
@@ -110,6 +115,11 @@ main{
     border-radius: 25px;
     background-color: var(--blue);
     font-weight: 700;
+}
+
+.button:hover{
+    opacity: 0.75;
+
 }
 
 .button-main{ /* button */
@@ -195,10 +205,6 @@ main{
     color: var(--cyan);
     width: 145px;
     border-bottom: 1.5px solid var(--cyan);
-}
-
-.quotations .lower{
-
 }
 
 .quotations .lower .quote{
@@ -290,16 +296,13 @@ footer .get-access form .email{
     border-radius: 25px;
     width: 225px;
     margin-bottom: var(--small);
+    color: black;
 }
 
 
 footer .footer-logo{
     margin: 0 var(--medium) var(--medium) var(--medium);
 }
-
-/* FOR DESKTOP
- margin: 0 var(--medium) var(--xlarge) var(--medium); */
-
 
 footer .links{
     margin: var(--large) var(--medium) var(--xlarge) var(--medium);
@@ -345,6 +348,10 @@ footer .links .links-col .links-others li{
     margin-bottom: var(--small);
 }
 
+footer .links .links-col .links-others li a:hover{
+    font-weight: 700;
+}
+
 footer .links .social{
     text-align: center;
 }
@@ -363,10 +370,27 @@ footer .links .social .social-links img{
     footer .get-access form .email{
         margin-bottom: 0;
         margin-right: var(--small);
+    }
+
+    footer .links{
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    footer .links .links-col, 
+    footer .links .social{
+        width: 20%;
+    }
+
 }
 
 @media only screen and (min-width:992px){
     h1, h2, h3{
         font-size: initial;
     }
+}
+
+.attribution{
+    padding: 10px;
+    background-color: pink;
 }
