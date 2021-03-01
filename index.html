@@ -39,7 +39,7 @@
     <p class="main-p">Fylo stores all your most important files in one secure location. Access them wherever 
       you need, share and collaborate with friends family, and co-workers.
     </p>
-    <a href="#" class="button">Get Started</a>
+    <a href="#" class="button button-main">Get Started</a>
   </main>
   
   <section class="deets">
@@ -71,26 +71,31 @@
 
   <section class="quotations">
     <div class="left">
-      <img src="images/illustration-stay-productive.png" alt="stay productive">
+      <img class="img-left" src="images/illustration-stay-productive.png" alt="stay productive">
       <div class="right">
         <h1>Stay productive, wherever you are</h1>
-        <p class="right-p">Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
-          storage needs.<br>
-          Securely share files and folders with friends, family and colleagues for live collaboration. No email 
+        <p>Never let location be an issue when accessing your files. Fylo has you covered for all of your file 
+          storage needs.
+        </p>
+        <p>Secretly share files and folders with friends, family and colleagues for live collaboration. No email 
           attachments required.
         </p>
-        <a href="#">See how Fylo works <img src="" alt="arrow"></a>
+        <a class="right-link" href="#">
+          See how Fylo works 
+          <span><img src="images/icon-arrow.svg" alt="arrow"></span> 
+        </a><!--right-link end-->
       </div> <!-- .right end tag-->
     </div> <!-- .left end tag-->
     
     <div class="lower">
       <div class="quote">
+        <img class="q-mark" src="images/bg-quotes.png">
         <p class="quote-p">
           Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has 
 become a well-oiled collaboration machine.
         </p>
         <div class="author-pic">
-          <img src="" alt="">
+          <img src="images/profile-1.jpg" alt="Satish Patel">
           <div class="name">
             <h5>Satish Patel</h5>
             <h6>Founder & CEO, Huddle</h6>
@@ -104,7 +109,7 @@ become a well-oiled collaboration machine.
           become a well-oiled collaboration machine.
         </p>
         <div class="author-pic">
-          <img src="" alt="">
+          <img src="images/profile-2.jpg" alt="Bruce McKenzie">
           <div class="name">
             <h5>Bruce McKenzie</h5>
             <h6>Founder & CEO, Huddle</h6>
@@ -118,7 +123,7 @@ become a well-oiled collaboration machine.
           become a well-oiled collaboration machine.
         </p>
         <div class="author-pic">
-          <img src="" alt="">
+          <img src="images/profile-3.jpg" alt="Iva Boyd">
           <div class="name">
             <h5>Iva Boyd</h5>
             <h6>Founder & CEO, Huddle</h6>
@@ -137,26 +142,30 @@ become a well-oiled collaboration machine.
         questions, our support team would be happy to help you.
       </p>
       <form action="post" class="form">
-        <input type="text" placeholder="email@example.com">
-        <input type="submit" class="button">Get Started For Free
+        <input type="text" class="email" placeholder="email@example.com">
+        <input type="submit" class="button" value="Get Started For Free">
       </form>
     </div>
 
-    <div class="logo">
-      <img src="" alt="logo">
+    <div class="footer-logo">
+      <img src="images/logo.svg" alt="logo" class="footer-logo-img">
     </div>
 
     <div class="links">
-      <div class="links-col">
-        <img src="" alt="pin">
+      <div class="links-col links-loc">
+        <img src="images/icon-location.svg" class="icon" alt="pin">
         <p class="links-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et 
           dolore magna aliqua</p>
       </div>
-      <div class="links-col">
-        <img src="" alt="phone">
-        <p class="links-p">+1-543-123-4567</p>
-        <img src="" alt="example@fylo.com">
-        <p class="links-p">example@fylo.com</p>
+      <div class="links-col links-phonemail">
+        <div class="links-inner">
+          <img src="images/icon-phone.svg" class="icon" alt="phone">
+          <p class="links-p">+1-543-123-4567</p>
+        </div>
+        <div class="links-inner">
+          <img src="images/icon-email.svg" class="icon" alt="example@fylo.com">
+          <p class="links-p">example@fylo.com</p>
+        </div>
       </div>
       <div class="links-col">
         <ul class="links-others">
@@ -174,7 +183,8 @@ become a well-oiled collaboration machine.
           </li>
         </ul>
       </div> <!--.links-col end tag-->
-        <ul class="links-others"></ul>
+      <div class="links-col">
+        <ul class="links-others">
           <li>
             <a href="#">Contact Us</a>
           </li>
@@ -185,13 +195,13 @@ become a well-oiled collaboration machine.
             <a href="#">Privacy</a>
           </li>
         </ul>
+      </div>
 
-      <div class="links-col">
-        <ul class="social">
-          <a href="#"><img src="" alt="facebook"></a>
-          <a href="#"><img src="" alt="twitter"></a>
-          <a href="#"><img src="" alt="instagram"></a>
-        </ul>
+      <div class="social">
+          <a href="#" class="social-links"><img src="images/icon-facebook.svg" alt="facebook"></a>
+          <a href="#" class="social-links"><img src="images/icon-twitter.svg" alt="twitter"></a>
+          <a href="#" class="social-links"><img src="images/icon-instagram.svg" alt="instagram"></a>
+
       </div><!--.links-col end tag-->
       
     </div><!--.links end tag-->

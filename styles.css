@@ -1,7 +1,7 @@
 :root{
     --dkblue-ie: hsl(217, 28%, 15%);
     --dkblue-main: hsl(218, 28%, 13%);
-    --dkblue-footer: sl(216, 53%, 9%);
+    --dkblue-footer: hsl(216, 53%, 9%);
     --dkblue-test: hsl(219, 30%, 18%);
     --cyan: hsl(176, 68%, 64%);
     --blue: hsl(198, 60%, 50%);
@@ -16,6 +16,8 @@
     --medium: 2rem;
     --large: 3rem;
     --xlarge: 4rem;
+    --double: 6rem;
+    --triple: 12.5rem
 
 }
 
@@ -34,13 +36,17 @@ body{
     background-repeat: no-repeat;
     background-size: cover;
     line-height: 1.5;
-    text-align: center;
+    text-align: left;
     font-size: 14px;
 }
 
 h1, h2, h3, h5, h6{
     font-family: var(--raleway);
     font-weight: 700;
+}
+
+h5, h6{
+    font-size: 12px;
 }
 
 nav{
@@ -83,6 +89,7 @@ main{
 
 .container{
     margin-bottom: var(--xlarge);
+    text-align: center;
 }
 
 .container h1{
@@ -99,11 +106,14 @@ main{
     width: 250px;
     display: inline-block;
     padding: var(--xsmall);
-    margin: var(--medium) 0;
 
     border-radius: 25px;
     background-color: var(--blue);
     font-weight: 700;
+}
+
+.button-main{ /* button */
+    margin: var(--medium) 0;
 }
 
 @media only screen and (min-width:992px){
@@ -118,6 +128,8 @@ main{
     margin-left: var(--medium);
     margin-right: var(--medium);
     margin-bottom: var(--xlarge);
+
+    text-align: center;
 }
 .deets .deets-container{
     margin-bottom: var(--xlarge);
@@ -147,15 +159,214 @@ main{
 
 .quotations{
     margin-bottom: var(--xlarge);
+    padding-bottom: var(--triple);
 }
+
 
 .quotations .left{
+    margin-left: var(--small);
+    margin-right: var(--small);
+    margin-bottom: var(--triple);
 
 }
 
+.quotations .left .img-left{
+    width: 80%;
+    margin-bottom: var(--large);
+}
+
+.quotations .right{
+    margin-bottom: var(--xlarge);
+}
+
+.quotations .right h1{
+    font-size: 1.2rem;
+    margin-bottom: var(--small);
+
+}
+
+.quotations .right p{
+    padding-bottom: var(--small);
+}
+
+.quotations .right .right-link{
+    display:flex;
+    align-items: center;
+    color: var(--cyan);
+    width: 145px;
+    border-bottom: 1.5px solid var(--cyan);
+}
+
+.quotations .lower{
+
+}
+
+.quotations .lower .quote{
+    width: 300px;
+    padding: var(--medium) var(--small);
+    background: var(--dkblue-test);
+    border-radius: 5px;
+    margin: 0 auto var(--medium) auto;
+}
+
+.quotations .lower .quote .q-mark{
+    position: absolute;
+    z-index: -1;
+    transform: translateY(-240%);
+    width: 27px;
+}
+
+.quotations .lower .quote .quote-p{
+    font-size: 12px;
+    margin-bottom: var(--small);
+}
+
+.quotations .lower .quote .author-pic{
+    display: flex;
+    align-items: center;
+}
+
+.quotations .lower .quote .author-pic img{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: var(--xsmall);
+}
+
+.quotations .lower .quote .author-pic .name h6{
+    font-weight: 400;
+}
 
 @media only screen and (min-width:992px){
-    h1, h2, h3, h5, h6{
+    .quotations{
+        margin-left: var(--xlarge);
+        margin-right: var(--xlarge);
+        
+    }
+    .quotations .left{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: var(--xlarge)
+    }
+
+    .quotations .right{
+        padding-left: var(--medium);
+        padding-right: var(--medium);
+    }
+
+    .quotations .lower{
+        display: flex;
+        justify-content: space-around;
+    }
+    
+}
+
+
+footer{
+    margin-top: var(--double);
+    padding-left: var(--small);
+    padding-right: var(--small);
+    background-color: var(--dkblue-footer);
+
+}
+
+footer .get-access{
+    background-color: var(--dkblue-test);
+    padding: var(--medium);
+    text-align: center;
+    transform: translateY(-130px);
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+footer .get-access > *{
+    margin-bottom: var(--small);
+}
+
+
+footer .get-access form .email{
+    padding: var(--xsmall);
+    border-radius: 25px;
+    width: 225px;
+    margin-bottom: var(--small);
+}
+
+
+footer .footer-logo{
+    margin: 0 var(--medium) var(--medium) var(--medium);
+}
+
+/* FOR DESKTOP
+ margin: 0 var(--medium) var(--xlarge) var(--medium); */
+
+
+footer .links{
+    margin: var(--large) var(--medium) var(--xlarge) var(--medium);
+    display: flex;
+    flex-flow: column wrap;
+
+}
+
+footer .links .links-col{
+    display: flex;
+}
+
+footer .links .links-loc{
+    margin-bottom: var(--small);
+}
+
+footer .links .links-col .links-p{
+    margin-left: var(--small);
+}
+
+footer .links .links-col .icon{
+    width: 20px;
+    height:20px;
+}
+
+footer .links .links-phonemail{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--large);
+    
+}
+
+footer .links .links-phonemail .links-inner{
+    display:flex;
+    margin-bottom: var(--small);
+}
+
+footer .links .links-col .links-others{
+    margin-bottom: var(--large);
+}
+
+footer .links .links-col .links-others li{
+    margin-bottom: var(--small);
+}
+
+footer .links .social{
+    text-align: center;
+}
+
+footer .links .social .social-links:not(:last-child){
+    margin-right: var(--small);
+}
+
+footer .links .social .social-links img{
+    padding: 5px;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+}
+
+@media only screen and (min-width:992px){
+    footer .get-access form .email{
+        margin-bottom: 0;
+        margin-right: var(--small);
+}
+
+@media only screen and (min-width:992px){
+    h1, h2, h3{
         font-size: initial;
     }
 }
